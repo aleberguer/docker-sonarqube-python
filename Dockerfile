@@ -3,7 +3,6 @@ MAINTAINER Alexander Bergeu "aberguer@octobot.io"
 
 EXPOSE 9000
 
-USER root
 RUN chmod 777 /opt/sonarqube -R 
 
 ENV SERVICE_NAME="sonarqube"
