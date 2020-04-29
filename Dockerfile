@@ -2,8 +2,8 @@ FROM sonarqube:alpine
 MAINTAINER Alexander Bergeu "aberguer@octobot.io"
 
 EXPOSE 9000
-RUN chgrp -R 0 /some/directory && \
-    chmod -R g=u /some/directory
+RUN chgrp -R 0 /opt/sonarqube && \
+    chmod -R g=u /opt/sonarqube
 
 RUN chmod 777 /opt/sonarqube -R 
 
